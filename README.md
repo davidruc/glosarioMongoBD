@@ -80,3 +80,11 @@ En mongoDB existe algo llamado **Incrustación y desnormalización** esto permit
 * En base al ejemplo anterior la tabla comments en SQL debería ser otra tabla o existir más normalización en la basa de datos.
 
 Sin embargo no siempre es la mejor solución.
+
+## Mongoose
+
+Permite un desarrollo rápido y simple de mongoDB y tener interacciones con la base de datos.
+
+Es una biblioteca de datos de objetos (ODM) para MongoDB y Node.js para tener un mayor nivel de abstracción. 
+
+* Mongoose no solo permite conectarme a la base de datos si no que también permite modelar la base de datos.  
