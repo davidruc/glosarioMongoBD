@@ -37,3 +37,14 @@ Crean, leen, actualizan y eliminan documentos
 * **ELIMINAR OPERACIONES:** Eliminan documentos de una colección. 
   * Puede eliminar un solo documento o varios en una sola operación
   * Se le pueden crear filtros o criterios para que identifiquen ciertos documentos que serán eliminados.
+
+* * 
+
+## Funciones CRUD
+
+La sintaxis para el crud es la siguiente:
+
+```
+Nombre_basedatos.nombre_colección.funcionCRUD
+```
+
