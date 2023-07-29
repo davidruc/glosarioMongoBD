@@ -48,3 +48,35 @@ La sintaxis para el crud es la siguiente:
 Nombre_basedatos.nombre_colección.funcionCRUD
 ```
 
+#### ¿Qué es un JSON?
+
+Sus siglas en ingles "javascript  object notation". Es un formato para guardar e intercambiar información que cualquier persona pueda leer. Lo más importante de este tipo de dato es que su estructura es clave valor. Las claves deben ser strings y los valores pueden tener cualquier tipo de dato de js.
+
+
+
+## Estructura del documento
+
+**BSON:** Formato de datos que utiliza MongoDB para almacenar datos. Muy parecidos a los JSON.
+
+```json
+{
+    "_id": Object('343423424'),
+    "title": "Something here",
+    "author": "Elonk musk",
+    "length": 3280,
+    "published": true,
+    "tags": ["MongoDB", "space", "ev"],
+    "comments": [
+        {"author": "Jonas", "text": "Amaizing"},
+        {"author": "Pepo", "text": "super"},
+        {"author": "PIG", "text": "Increbible"}
+    ]
+}
+```
+
+En mongoDB existe algo llamado **Incrustación y desnormalización** esto permite la inclusión de datos relacionados en un solo documento. 
+
+* Esto permite aplicaciones más rápidas ya que el acceso a los datos es más rápido.
+* En base al ejemplo anterior la tabla comments en SQL debería ser otra tabla o existir más normalización en la basa de datos.
+
+Sin embargo no siempre es la mejor solución.
