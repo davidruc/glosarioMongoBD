@@ -1,10 +1,6 @@
 # MONGO DB
 
-Es un sistema de bases de datos NoSQL, **Orientado a documentos** y de código abierto. 
-
-* No guarda datos en tablas
-
-Mongo BD guarda estructuras de datos JSON con un esquema dinámico.
+Es un sistema de bases de datos NoSQL, **Orientado a documentos** y de código abierto que guarda estructuras de datos JSON con un esquema dinámico.
 
 ## ¿Qué es mongoDB?
 
@@ -80,6 +76,61 @@ En mongoDB existe algo llamado **Incrustación y desnormalización** esto permit
 * En base al ejemplo anterior la tabla comments en SQL debería ser otra tabla o existir más normalización en la basa de datos.
 
 Sin embargo no siempre es la mejor solución.
+
+## Instalación de MongoDB
+
+Inicialmente hay que instalar mongoDB, por lo que se debe dirigir a la página oficial de [mongoDB](https://www.mongodb.com/docs/manual/installation/) y descargará el archivo para su sistema operativo.
+
+* Community Edition son las versiones gratuitas soportadas por la comunidad. No tienen respondo de mongoDB.
+* Enterprise Edition o ediciones de empresas, son las pagas las cuales son soportadas por mongoDB.
+
+Para efectos prácticos en este caso se realizará la instalación únicamente para un sistema operativo linux con distribución ubuntu. 
+
+1. Vamos a importar la clave pública utilizada por el sistema de gestión de paquetes 
+
+```bash
+sudo apt-get install gnupg curl
+```
+
+2. Ejecute el siguiente comando para importar la clave GPG pública de MongoDB desde
+```bash
+curl -fsSL https://pgp.mongodb.com/server-6.0.asc | \
+   sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg \
+   --dearmor
+```
+
+3. Crear un archivo de lista para MongoDB
+```bash
+sudo touch /etc/apt/sources.list.d/mongodb-org-6.0.list
+```
+
+*Si no está seguro de qué versión de Ubuntu está ejecutando el host, abra una terminal o shell en el host y ejecute lsb_release -dc.*
+
+4. En la documentación oficial se pueden ingresar disferentes versiones. Seleccione la que sea apropiada de su versión de ubuntu.
+
+En este caso está el ejemplo de una distribución ubuntu 18.04 ingrese el siguiente comando:
+
+```bash
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+```
+
+5. Ingrese el siguiente comando para recargar los paquetes de las bases de datos locales 
+```bash
+sudo apt-get update
+```
+6. Para instalar los paquetes de mongoDB. Hay opción de instalar la versión estable o alguna vesión específica de mongoDB, para el caso actual se utilizará la versión estable:
+
+```bash
+sudo apt-get install -y mongodb-org
+```
+
+
+
+
+
+
+
+
 
 ## Mongoose
 
