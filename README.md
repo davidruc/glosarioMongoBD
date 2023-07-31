@@ -177,6 +177,34 @@ sudo rm -r /var/lib/mongodb
 ```
 De esta forma no tendremos a mongo en nuestro sistema.
 
+
+## MongoDB con COMPASS
+
+### Instalación de MongoDB Compass
+
+Antes de instalar MongoDBCompass verifique que tenga mongoDB en su sistema:
+
+```bash
+mongod --version
+```
+
+Una vez confime que tiene mongo en su sistema diríjase a la documentación oficial de MongoDB donde encontrará información de la instalación de COMPASS (https://www.mongodb.com/try/download/compass)
+
+Seleccione la versión que desee (en preferencia la versión estable), la plataforma y el tipo del archivo que va a instalar. 
+
+Una vez descargado para el caso de la distribución Ubuntu, el archivo a descarga sería un .deb. Para ejecutar este archivo se tiene que escribir el siguiente comando en la terminal (en la ruta donde se encuentre el archivo. Lo más lógico sería que fuera en /Downloads):
+
+```bash
+chmod +x mongodb-compass-community-*-linux-x64*.AppImage
+```
+
+Y para ejecutar MongoDB Compass. 
+
+```bash
+./mongodb-compass-community-*-linux-x64*.AppImage
+```
+
+
 ## Mongoose
 
 Permite un desarrollo rápido y simple de mongoDB y tener interacciones con la base de datos.
