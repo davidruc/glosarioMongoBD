@@ -124,8 +124,21 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
 
+Cabe aclarar que los pasos mencionados en esta fase son específicos de ubuntu 18.04 y que si se desea hacer la instalación con otro sistema operativo o con otra distribución es importante que se observen los pasos de la documentación oficial.
 
+### Ejecutar MongoDB en linux - ubuntu
 
+1. Para iniciar MongoDB es importante abrir una terminar y escribir el siguiente comando:
+
+```bash
+sudo systemctl start mongod
+```
+
+Si por algún motivo se llega a observar un error cuando se inicia mongo
+
+```bash
+sudo systemctl daemon-reload
+```
 
 
 
