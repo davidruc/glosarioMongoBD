@@ -140,10 +140,42 @@ Si por algún motivo se llega a observar un error cuando se inicia mongo
 sudo systemctl daemon-reload
 ```
 
+### Otros comandos útiles para MongoDB
 
+* Si deseas observar el estado de mongoDB en tu computadora ejecuta el siguiente comando:
 
+```bash
+sudo systemctl status mongod
+```
 
+Sin embargo, por defecto mongodb se va a apagar cada vez que reinicias el computador, por lo que opcionalmente puedes asegurarte de que MongoDB comenzará después de un reinicio del sistema emitiendo el siguiente comando:
 
+```bash
+sudo systemctl enable mongod
+```
+
+* Si deseamos detener los servicios de mongoDB solo debemos ingresar el siguiente comando: 
+
+```bash
+sudo systemctl stop mongod
+```
+
+* Si lo que necesitamos es reiniciar mongoDB escribiremps:
+
+```bash
+sudo systemctl restart mongod
+```
+
+* Si llegamos a necesitar desinstalar mongodb, detenemos el servicio de mongo y escribimos los siguientes comandos: 
+
+```bash
+sudo apt-get purge mongodb-org*
+```
+```bash
+sudo rm -r /var/log/mongodb
+sudo rm -r /var/lib/mongodb
+```
+De esta forma no tendremos a mongo en nuestro sistema.
 
 ## Mongoose
 
