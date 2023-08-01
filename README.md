@@ -6,6 +6,13 @@ Es un sistema de bases de datos NoSQL, **Orientado a documentos** y de código a
 
 Es una base de datos de documentos con la escabilidad (**para el big data**) y flexibilidad que desea con la consulta e indexación que necesitas.
 
+### ¿Que es NoSQL?
+Es un termino que se le da a un conjunto de bases de datos que se diferencian en gran parte a las bases de datos convencionales. Son las que no usan SQL. 
+
+Las bases NoSQL están diseñadas para modelos de datos específicos y tienen esquemas flexibles para crear aplicaciones modernas. Son fáciles de desarrollar, tienen una gran funcionalidad y un rendimiento a escala.
+
+Las bases de datos NoSQL guardan y consulta datos fuera de las estructuras tradicionales SQL.
+
 ### Características: 
 
 * **Basado en documentos:** Almacena datos en documentos, en estructuras de datos pares de valor.
@@ -24,7 +31,6 @@ Crean, leen, actualizan y eliminan documentos
 * **CREAR OPERACIONES:** las operaciones de creación o inserción agregan nuevos documentos a una colección. 
   * Si la colección no existe, las operaciones de creación también crea la colección.
   * Se puede insertar uno o varios documentos en una sola operación.
-
 * **LEER OPERACIONES:** Recuperan documentos de una colección, es decir, consultar una colección de documentos.
   * Se pueden especificar criterios o filtros para identificar los documentos a devolver.
 * **ACTUALIZAR OPERACIONES:** Modifican los documentos existentes en una colección. 
@@ -34,7 +40,6 @@ Crean, leen, actualizan y eliminan documentos
   * Puede eliminar un solo documento o varios en una sola operación
   * Se le pueden crear filtros o criterios para que identifiquen ciertos documentos que serán eliminados.
 
-* * 
 
 ## Funciones CRUD
 
@@ -209,6 +214,9 @@ Y para ejecutar MongoDB Compass.
 Si estás trabajando con Visual studio code, existe una extensión bastante útil llamada mongoDB. 
 
 Con ella puedes conectarte a cloud Mongo con Compass y genarar un archivo *.mongodb* para escribir consultas de mongo desde el editor de código.
+
+
+
 
 ## Mongoose
 
