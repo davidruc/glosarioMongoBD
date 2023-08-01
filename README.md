@@ -204,6 +204,11 @@ Y para ejecutar MongoDB Compass.
 ./mongodb-compass-community-*-linux-x64*.AppImage
 ```
 
+### Extensiones útiles para el desarrollo
+
+Si estás trabajando con Visual studio code, existe una extensión bastante útil llamada mongoDB. 
+
+Con ella puedes conectarte a cloud Mongo con Compass y genarar un archivo *.mongodb* para escribir consultas de mongo desde el editor de código.
 
 ## Mongoose
 

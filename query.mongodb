@@ -1,0 +1,31 @@
+use("db_campus_alquiler");
+db.sucursal.insertMany([
+    {
+        _id: 1,
+        ID_Sucursal:1,
+        Nombre:"Bucaramanga",
+        Direccion:"calla 11 cr.32",
+        Telefono:"3224757534"
+    },
+    {
+        _id: 2,
+        ID_Sucursal:2,
+        Nombre:"Medellin",
+        Direccion:"calla 11 cr.32",
+        Telefono:"3588654216"
+    },
+    {
+        _id: 3,
+        ID_Sucursal:3,
+        Nombre:"Bogota",
+        Direccion:"calla 11 cr.32",
+        Telefono:"3215489586"
+    },
+    {
+        _id: 4,
+        ID_Sucursal:4,
+        Nombre:"Barranca",
+        Direccion:"calla 11 cr.32",
+        Telefono:"3156589574"
+    }
+]);
