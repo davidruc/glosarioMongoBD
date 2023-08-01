@@ -24,6 +24,12 @@ Las bases de datos NoSQL guardan y consulta datos fuera de las estructuras tradi
 
 La base de datos contiene una serie de colecciones (tablas) y cada colección tiene un número de documentos (filas).
 
+## Tipos de basos de datos NoSQL 
+
+Hay diferentes modelos de acuerdo a como estructuran los datos y cada una se desempeña mejor dependiendo del contexto específico.
+
+1. **Tipo clave valor:** 
+
 ## Operaciones CRUD
 
 Crean, leen, actualizan y eliminan documentos
